@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.DS_Store
+.env
+*.log
+_to_delete/
+
+# Local working materials and private verification records
+backups/
+evidence/
+docs/
+GIM_WORK.md
+AGENTS.md
+CLAUDE.md
+.claude/
+scripts/

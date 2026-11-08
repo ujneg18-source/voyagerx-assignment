@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유진영 · Voyager X 과제</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+</head>
+<body>
+
+<!-- ================= ONBOARDING ================= -->
+<section id="onboard" aria-label="시작 화면">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="ob-stage">
+    <img class="ob-logo" src="./assets/voyagerx-logo-white.svg" alt="VOYAGER X">
+    <div class="ob-sub" aria-label="next astronaut">next astronaut</div>
+    <button class="ob-go" id="obGo">과제 확인하기</button>
+  </div>
+  <button class="ob-skip">건너뛰기</button>
+</section>
+<div id="fade"></div>
+
+<!-- ================= APP ================= -->
+<div id="app">
+  <header class="topnav">
+    <div class="brand" id="home" title="처음으로"><img src="./assets/voyagerx-logo.svg" alt="VOYAGER X"></div>
+    <nav class="tabs" id="tabs"></nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><div class="sb-title" id="sbTitle"></div><div id="sbList"></div></aside>
+    <main class="main" id="main">
+
+<!-- ===== Q1 ===== -->
+<article class="page manual-page manual-v2" data-id="q1-intro" data-q="q1" data-title="소개">
+  <div class="crumbs">유진영 사용 설명서 <span class="sep">›</span> 소개</div>
+  <h1>유진영 사용 설명서</h1>
+  <section class="manual-cover" aria-label="유진영 소개">
+    <div class="manual-cover-copy">
+      <p class="manual-role">유진영 · 서비스 기획</p>
+      <p class="manual-cover-title">설명은 쉽게,<br>일은 구체적으로.</p>
+      <p>국어 강사로 학생·학부모를 만나고,<br>AI 교육 과정에서 팀과 웹 서비스를 만들었습니다.<br>필요한 기능을 정리하고, 화면을 만들고,<br>처음 쓰는 사람을 위한 설명을 작성합니다.</p>
+      <div class="manual-links"><a href="https://ujneg-blog.vercel.app/about" target="_blank" rel="noopener noreferrer">기술블로그 ↗</a><a href="https://github.com/ujneg18-source" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    </div>
+    <div class="manual-portrait"><img src="./assets/q1/profile-blog.png" alt="노트북 앞에 앉은 유진영과 강아지를 그린 블로그 프로필 일러스트" width="1704" height="923"></div>
+  </section>
+  <section class="manual-section">
+    <h2 id="q1-profile-career" data-toc-label="주요 이력"><span class="manual-section-no" aria-hidden="true">01</span>지금의 저를 만든 경험</h2>
+    <dl class="manual-career">
+      <div><dt><span>2018.03–2024.02</span>경희대학교</dt><dd><b>국어국문학과 졸업</b><p>언어와 글을 공부하며, 상대가 이해할 수 있는 설명을 고민했습니다.</p><small>학점 4.15 / 4.5</small></dd></div>
+      <div><dt><span>2024.05–12</span>기파랑문해원</dt><dd><b>국어 강사 · 학생·학부모 관리</b><p>약 150명 규모의 학생·학부모를 관리하고, 출결·과제·성적을 상담 자료로 정리했습니다.</p></dd></div>
+      <div><dt><span>2026.04–10</span>SK네트웍스<br>Family AI 캠프</dt><dd><b>31기 · 960시간 수료</b><p>Python·SQL을 배우고, 질문에 답하거나 글을 만드는 AI 서비스를 팀으로 개발했습니다. 필요한 기능 정리, 데이터 수집, 초기 화면 제작을 맡았습니다.</p></dd></div>
+    </dl>
+  </section>
+  <section class="manual-section">
+    <h2 id="q1-profile-achievement" data-toc-label="팀과 만든 성과"><span class="manual-section-no" aria-hidden="true">02</span>팀과 함께 만든 성과</h2>
+    <div class="manual-achievement"><div><span class="manual-overline">2026.08 · 도란도란 팀</span><strong>문화체육관광부 장관상<br>공모전 대상</strong></div><div><p><b>아이의 읽기 수준에 맞춰 전래동화를 만드는 AI 서비스 ‘도란도란’</b>으로 팀과 함께 대상을 받았습니다.</p><p>저는 3인 팀의 팀장으로 필요한 기능과 동화 생성 기준을 정리하고, 어휘·설화 데이터를 준비했습니다. 사업계획서 작성과 발표도 맡았습니다.</p><small>제4회 문화체육관광 인공지능·데이터 활용 공모전<br>2026.09 범정부 공공데이터·AI 창업경진대회 통합본선 진출</small></div></div>
+    <a class="manual-text-link" href="#q1-issue" data-go="q1-issue">변경 이력에서 전체 경험 보기 →</a>
+  </section>
+</article>
+
+<article class="page manual-page manual-v2" data-id="q1-strength" data-q="q1" data-title="잘하는 일">
+  <div class="crumbs">유진영 사용 설명서 <span class="sep">›</span> 잘하는 일</div>
+  <h1>이런 일을 잘합니다</h1>
+  <p class="manual-lead">필요한 정보를 모으고,<br>실행할 일과 쉬운 설명으로 정리합니다.</p>
+  <section class="manual-section manual-capability">
+    <div class="manual-capability-copy"><h2 id="q1-skill-organize" data-toc-label="상담 자료 정리"><span class="manual-section-no" aria-hidden="true">01</span>필요한 정보를 한눈에 보이게 정리합니다</h2><p><b>학습 기록을 한곳에 모아, 학부모에게 학생의 상태를 더 짧고 구체적으로 설명했습니다.</b></p><dl class="manual-proof"><div><dt>해 본 일</dt><dd><p>국어 강사로 약 150명 규모의 학생·학부모를 관리했습니다. 학부모가 자주 묻는 “우리 아이가 잘 관리되고 있나요?”에 답하려고 출결·과제 제출·성적을 한 파일에 모았습니다.</p><p>성적은 비문학·문학·어휘·문법으로 나눠, 어느 부분을 더 공부해야 하는지 설명했습니다. 이 자료를 활용한 상담은 30~40분에서 15분 안팎으로 줄었습니다.</p></dd></div><div><dt>할 수 있는 일</dt><dd>고객 문의와 사용 기록을 함께 정리해, 반복되는 질문과 불편한 단계를 찾을 수 있습니다. 팀이 먼저 해결할 일을 판단할 수 있도록 근거를 문서로 정리합니다.</dd></div></dl></div>
+    <aside class="manual-evidence" aria-label="학부모 상담 한 번에 걸린 시간"><span>학부모 상담 1회</span><div class="manual-evidence-before">30–40분</div><span class="manual-evidence-arrow" aria-hidden="true">↓</span><strong>15분 안팎</strong><small>상담 자료를 정리하기 전 → 후<br>출결·과제·영역별 성적 활용</small></aside>
+  </section>
+  <section class="manual-section manual-capability">
+    <div class="manual-capability-copy"><h2 id="q1-skill-plan" data-toc-label="기능·담당자·일정 정리"><span class="manual-section-no" aria-hidden="true">02</span>만들 기능과 담당자, 일정을 구체화합니다</h2><p><b>5명이 8주 동안 웹 서비스를 만들 수 있도록, 필요한 기능과 작업 순서를 정리했습니다.</b></p><dl class="manual-proof"><div><dt>해 본 일</dt><dd><p>‘FEEDiT’은 패션 유행과 상품 정보를 모아 구매 판단을 돕는 웹 서비스입니다. 저는 기획·일정을 관리하는 PM을 맡았습니다.</p><p>무엇을 만들고 어떤 기준을 충족할지 총 83개 항목으로 정리했습니다. 사용자가 쓸 기능 72개와 운영·품질 조건 11개입니다. 누가 어떤 작업을 언제까지 마칠지는 작업 일정표(WBS)로 관리했습니다.</p></dd></div><div><dt>할 수 있는 일</dt><dd>서비스 아이디어를 기능 목록으로 나누고, 먼저 만들 기능과 확인 기준을 정할 수 있습니다. 담당자와 일정을 연결해 팀이 다음 할 일을 알 수 있게 정리합니다.</dd></div></dl></div>
+    <aside class="manual-evidence manual-evidence-team" aria-label="FEEDiT 프로젝트 팀 규모와 기간"><span>함께 웹 서비스를 만든 팀</span><strong>5<em>명</em></strong><span class="manual-evidence-label">기획부터 배포까지</span><strong>8<em>주</em></strong><small>2026.08–10<br>제 역할 · 기획·일정 관리(PM)</small></aside>
+  </section>
+  <section class="manual-section manual-capability">
+    <div class="manual-capability-copy"><h2 id="q1-skill-explain" data-toc-label="취재 내용을 쉬운 안내로"><span class="manual-section-no" aria-hidden="true">03</span>처음 접하는 내용을 쉽게 풀어 씁니다</h2><p><b>정책 현장에서 들은 이야기를 기사·카드뉴스·영상으로 만들어 독자에게 전달했습니다.</b></p><dl class="manual-proof"><div><dt>해 본 일</dt><dd><p>고용노동부 정책기자단으로 정책 현장을 방문하고, 정책을 이용한 사람과 전문가를 인터뷰했습니다. 취재한 내용은 기사·카드뉴스·영상으로 제작해 총 6회 배포했습니다.</p></dd></div><div><dt>할 수 있는 일</dt><dd>고객 답변·사용 안내·새 기능 소개를 쓸 수 있습니다. 누구에게 필요한 기능인지 먼저 설명하고, 사용 순서와 버튼 이름을 구체적으로 안내합니다.</dd></div></dl></div>
+    <aside class="manual-evidence" aria-label="정책 취재 콘텐츠 배포 횟수"><span>정책 취재 콘텐츠</span><strong>6<em>회 배포</em></strong><small>고용노동부 정책기자단<br>기사 · 카드뉴스 · 영상<br>2022.03–11</small></aside>
+  </section>
+</article>
+
+<article class="page manual-page manual-v2" data-id="q1-work" data-q="q1" data-title="일하는 순서">
+  <div class="crumbs">유진영 사용 설명서 <span class="sep">›</span> 일하는 순서</div>
+  <h1>이렇게 일합니다</h1>
+  <p class="manual-lead">무엇을 만들지 먼저 정하고,<br>초안을 함께 보며 완성해 갑니다.</p>
+  <section class="manual-section"><h2 id="q1-work-order" data-toc-label="일을 진행하는 순서"><span class="manual-section-no" aria-hidden="true">01</span>이 순서로 함께 진행하겠습니다</h2>
+    <ol class="handoff-flow">
+      <li><h3 id="q1-work-goal" data-toc-label="목적 확인">대상과 목표, 기한을 확인합니다</h3><p>누가 쓸 것인지, 어떤 불편을 해결할지, 언제까지 필요한지 먼저 확인합니다. 꼭 포함할 기능과 이번에는 만들지 않을 범위를 정리합니다.</p><span>결과물 · 대상·목표·기한·작업 범위를 정리한 문서</span></li>
+      <li><h3 id="q1-work-draft" data-toc-label="초안 공유">글이나 화면 초안으로 방향을 확인합니다</h3><p>안내문은 문장 초안으로, 서비스는 간단한 화면으로 보여 드립니다. 버튼을 어디에 둘지, 어떤 내용을 보여 줄지 함께 확인한 뒤 세부 내용을 다듬습니다.</p><span>결과물 · 검토할 수 있는 글·화면·기능 목록</span></li>
+      <li><h3 id="q1-work-progress" data-toc-label="진행 조율">진행 상황과 결정할 일을 공유합니다</h3><p>완료한 일, 다음 할 일, 함께 결정할 일을 구분합니다. 일정에 영향을 주는 변경은 이유와 선택지를 함께 전달합니다.</p><span>결과물 · 진행 현황과 결정이 필요한 항목</span></li>
+      <li><h3 id="q1-work-check" data-toc-label="결과 확인">사용자가 하려던 일을 끝낼 수 있는지 확인합니다</h3><p>처음부터 끝까지 직접 사용하며 빠진 단계와 오류를 찾습니다. 사용자 반응이나 기록이 있다면 어느 단계에서 멈추는지, 완료까지 얼마나 걸리는지도 확인해 다음 개선점을 정리합니다.</p><span>결과물 · 확인한 문제·근거·다음 작업 목록</span></li>
+    </ol>
+  </section>
+  <section class="manual-section manual-work-case"><h2 id="q1-work-example" data-toc-label="초안 공유의 실제 사례"><span class="manual-section-no" aria-hidden="true">02</span>도란도란에서 화면을 보며 개발 범위를 정했습니다</h2><p class="manual-case-connection">위 2단계 ‘초안 공유’를 실제 프로젝트에서 적용한 사례입니다.</p><p><b>웹 화면 초안을 직접 만들어, 팀원들과 먼저 구현할 기능을 정했습니다.</b> ‘도란도란’은 아이의 읽기 수준에 맞춰 전래동화를 만드는 AI 서비스입니다. 저는 3인 팀의 팀장으로 기획과 데이터 준비를 맡았습니다.</p><dl class="manual-proof manual-case-details"><div><dt>만든 것</dt><dd>개발 초기에 서비스의 웹 화면과 디자인 초안을 직접 만들었습니다. 기능을 설명할 때 팀원들이 함께 볼 수 있는 자료로 사용했습니다.</dd></div><div><dt>함께 정한 것</dt><dd>같은 화면을 보면서 서비스에 꼭 필요한 기능과 우선 구현할 범위를 맞췄습니다. 이후 기획·데이터는 제가, 서버 기능과 사용자 화면은 각 담당 팀원이 맡아 개발했습니다.</dd></div><div><dt>연결한 기준</dt><dd>아이의 읽기 수준을 20단계로 나누고, 단계마다 사용할 낱말과 문장 길이를 정리했습니다. 이 기준이 AI의 동화 생성과 사용자 화면에 함께 반영되도록 팀과 조율했습니다.</dd></div></dl></section>
+</article>
+
+<article class="page manual-page manual-v2" data-id="q1-talk" data-q="q1" data-title="소통하는 법">
+  <div class="crumbs">유진영 사용 설명서 <span class="sep">›</span> 소통하는 법</div>
+  <h1>소통하는 법</h1>
+  <p class="manual-lead">요청은 편하게.<br>답변은 구체적으로.</p>
+  <p class="manual-api-intro">저와 주고받을 이야기를 API 요청 문서처럼 정리했습니다.<br>아래 요청과 답변은 함께 일할 때의 소통 예시입니다.</p>
+  <section class="manual-section manual-api-section">
+    <h2 id="q1-api-request" data-toc-label="업무 요청"><span class="manual-section-no" aria-hidden="true">01</span>일을 요청할 때</h2>
+    <div class="manual-endpoint"><span class="manual-method">POST</span><code>/work-requests</code><span>업무 요청</span></div>
+    <p>원하는 결과를 알려 주세요. 아직 정리 중인 요청도 함께 구체화하겠습니다.</p>
+    <p class="manual-api-scenario"><b>아래 예시의 상황</b> 처음 사용하는 고객이 검색 시작일·종료일 선택을 어려워해, 날짜 선택 안내문을 고치는 업무입니다.</p>
+    <h3 id="q1-api-fields" data-toc-label="요청 항목">이런 정보가 있으면 좋습니다</h3>
+    <dl class="manual-api-fields"><div><dt><code>goal</code><b>목표</b></dt><dd>무엇을 해결하거나 바꾸고 싶은가요?</dd></div><div><dt><code>context</code><b>상황</b></dt><dd>누가, 어느 화면이나 과정에서 겪는 문제인가요?</dd></div><div><dt><code>due</code><b>기한</b></dt><dd>언제, 어떤 수준의 결과가 필요한가요?</dd></div><div><dt><code>reference</code><b>참고 자료</b></dt><dd>관련 화면·문서·사용자 의견을 함께 보면 더 빨리 맞출 수 있습니다.</dd></div></dl>
+    <h3 id="q1-api-response" data-toc-label="요청·답변 예시">이렇게 요청하고, 이렇게 확인합니다</h3>
+    <div class="manual-exchange">
+      <div class="manual-request-example"><div class="manual-example-bar"><span>요청 예시</span><code>application/json</code></div><pre><code>{
+  "goal": "날짜 선택 안내를 쉽게",
+  "context": "처음 사용하는 고객",
+  "due": "금요일까지 초안",
+  "reference": "현재 안내 화면"
+}</code></pre></div>
+      <div class="manual-response-example"><div class="manual-example-bar"><span>답변 예시</span><code>200 OK</code></div><dl><div><dt>이해한 내용</dt><dd>처음 쓰는 고객이 날짜 선택을 마칠 수 있도록 안내를 다듬는 일이군요.</dd></div><div><dt>먼저 보여 드릴 것</dt><dd>버튼 이름과 선택 순서가 보이는 안내 초안을 만들겠습니다.</dd></div><div><dt>함께 확인할 것</dt><dd>고객이 자주 멈추는 화면도 알려 주시면 초안에 반영하겠습니다.</dd></div></dl></div>
+    </div>
+  </section>
+  <section class="manual-section manual-api-section">
+    <h2 id="q1-api-progress" data-toc-label="진행 상황 공유"><span class="manual-section-no" aria-hidden="true">02</span>진행 상황을 전할 때</h2>
+    <div class="manual-endpoint"><span class="manual-method manual-method-get">GET</span><code>/progress</code><span>진행 현황</span></div>
+    <p>결론을 먼저 말하고, 완료한 일·다음 할 일·결정할 일을 나눠 전달하겠습니다.</p>
+    <div class="manual-status-example" aria-label="진행 공유 예시"><span class="manual-example-label">진행 공유 예시</span><dl><div><dt>완료</dt><dd>안내 초안을 만들고, 버튼 이름을 실제 화면과 맞췄습니다.</dd></div><div><dt>다음</dt><dd>초안을 따라 사용해 보며 빠진 단계가 있는지 확인하겠습니다.</dd></div><div><dt>결정 요청</dt><dd>PC와 모바일 중 먼저 다룰 화면을 정하면 좋겠습니다.</dd></div></dl></div>
+  </section>
+  <section class="manual-section manual-api-section">
+    <h2 id="q1-api-feedback" data-toc-label="피드백 반영"><span class="manual-section-no" aria-hidden="true">03</span>의견을 맞출 때</h2>
+    <div class="manual-endpoint"><span class="manual-method manual-method-patch">PATCH</span><code>/feedback</code><span>의견 반영</span></div>
+    <p>바꾸고 싶은 부분과 이유를 알려 주세요. 제가 이해한 내용을 되짚고, 반영할 내용과 확인할 내용을 정리하겠습니다.</p>
+    <div class="manual-feedback-example"><p><span>의견 예시</span>“설명이 길어서 버튼을 누르기까지 오래 걸려요.”</p><p><span>답변 예시</span>“첫 문장을 줄이고, 버튼을 먼저 보여 주는 초안으로 비교해 보겠습니다.”</p></div>
+    <p class="manual-api-closing">말로 설명하기 어렵다면, 화면 한 장에서 시작해도 좋습니다.</p>
+  </section>
+</article>
+
+<article class="page manual-page manual-v2" data-id="q1-issue" data-q="q1" data-title="변경 이력">
+  <div class="crumbs">유진영 사용 설명서 <span class="sep">›</span> 변경 이력</div>
+  <h1>변경 이력</h1>
+  <p class="manual-lead">배운 것을 실제 일에<br>하나씩 더해 왔습니다.</p>
+  <div class="manual-changelog">
+    <section class="manual-release manual-release-latest"><div class="manual-release-version"><b>v5.0</b><time datetime="2026-10">2026.10</time><span class="manual-release-status">최신</span></div><div class="manual-release-body"><h2 id="q1-release-v5" data-toc-label="v5.0 · 팀 PM·배포 후 점검">팀의 기획·일정 관리부터 배포 후 점검까지</h2><ul class="manual-changes">
+      <li><span class="manual-change-type">기획</span><div><b>FEEDiT · 5인 팀 기획·일정 관리(PM)</b><small>2026.08–10 · 8주</small><p>패션 유행과 상품 정보를 모아 구매 판단을 돕는 웹 서비스입니다. 저는 만들 기능과 운영·품질 조건을 83개 항목으로 정리하고, 담당자별 작업 일정표(WBS)를 관리했습니다.</p><p>데이터 수집과 AI 기능 구현에도 참여했습니다. 배포 후에는 공개 API, 즉 외부에서 요청을 받아 정보를 돌려주는 기능 5종을 100회씩 점검했습니다. 해당 점검에서 500건 모두 정상 응답을 확인했습니다.</p></div></li>
+      <li><span class="manual-change-type">수료</span><div><b>SK네트웍스 Family AI 캠프 31기 · 960시간</b><small>2026.04–10 · 플레이데이터</small><p>Python·SQL·데이터 분석·LLM·AI 애플리케이션 개발을 배우고 팀 프로젝트에 적용했습니다.</p></div></li>
+    </ul></div></section>
+    <section class="manual-release"><div class="manual-release-version"><b>v4.0</b><span>2026.07–09</span></div><div class="manual-release-body"><h2 id="q1-release-v4" data-toc-label="v4.0 · AI 서비스 기획·팀 성과">AI 서비스를 기획하고 팀과 성과를 만들다</h2><ul class="manual-changes">
+      <li><span class="manual-change-type manual-change-award">수상</span><div><b>도란도란 팀 · 문화체육관광부 장관상 대상</b><small>2026.08</small><p>제4회 문화체육관광 인공지능·데이터 활용 공모전 대상. 9월에는 범정부 공공데이터·AI 창업경진대회 통합본선에 진출했습니다.</p></div></li>
+      <li><span class="manual-change-type">기획</span><div><b>도란도란 · 3인 팀장</b><small>2026.07–</small><p>아이의 읽기 수준에 맞춰 전래동화를 만드는 AI 서비스입니다. 기획·데이터·발표를 맡고, 개발 초기에 웹 화면 초안을 만들어 팀과 구현 범위를 정했습니다.</p><p>0–10세의 읽기 수준을 20단계로 나누고, 단계마다 사용할 낱말과 문장 길이 등 동화 생성 조건을 설계했습니다.</p></div></li>
+      <li><span class="manual-change-type">설계</span><div><b>AI 치매 정보 알리미 · 기획·데이터 구조 설계</b><small>2026.07–08</small><p>치매 관련 질문에 답하고 지역의 지원 기관을 안내하는 AI 서비스입니다. 저는 공공데이터를 수집·정리하고, 지역·기관·지원 서비스의 관계를 연결한 데이터 구조(GraphDB)와 조회 도구를 만들었습니다.</p></div></li>
+    </ul></div></section>
+    <section class="manual-release"><div class="manual-release-version"><b>v3.0</b><time datetime="2024">2024</time></div><div class="manual-release-body"><h2 id="q1-release-v3" data-toc-label="v3.0 · 강의·상담 데이터">교육 경험에 데이터 정리를 더하다</h2><ul class="manual-changes"><li><span class="manual-change-type">경력</span><div><b>기파랑문해원 · 국어 강사</b><small>2024.05–12</small><p>약 150명 규모의 학생·학부모 관리. 출결·과제·성적을 정리하고 Excel 기반 상담 자료를 표준화했습니다.</p></div></li><li><span class="manual-change-type">졸업</span><div><b>경희대학교 국어국문학과</b><small>2024.02 · 학점 4.15 / 4.5</small></div></li></ul></div></section>
+    <section class="manual-release"><div class="manual-release-version"><b>v2.0</b><span>2021–2022</span></div><div class="manual-release-body"><h2 id="q1-release-v2" data-toc-label="v2.0 · 취재·멘토링">상대에게 맞춰 설명하는 경험</h2><ul class="manual-changes"><li><span class="manual-change-type">활동</span><div><b>고용노동부 정책기자단 14기</b><small>2022.03–11</small><p>현장 방문과 인터뷰를 바탕으로 정책을 기사·카드뉴스·영상으로 제작해 총 6회 배포했습니다.</p></div></li><li><span class="manual-change-type">합격</span><div><b>공인노무사 1차 시험</b><small>2022.05</small></div></li><li><span class="manual-change-type">활동</span><div><b>경희대학교 유학생 멘토링</b><small>2021.09–11 · 교육봉사 32시간</small><p>한국어 학습과 대학 생활 적응을 돕고, 학습 일정과 진행 상황을 함께 관리했습니다.</p></div></li></ul></div></section>
+    <section class="manual-release"><div class="manual-release-version"><b>v1.0</b><time datetime="2018-03">2018.03</time><span class="manual-release-status manual-release-first">첫 출시</span></div><div class="manual-release-body"><h2 id="q1-release-v1" data-toc-label="v1.0 · 국어국문학 전공">언어와 사람을 공부하기 시작</h2><ul class="manual-changes"><li><span class="manual-change-type">입학</span><div><b>경희대학교 국어국문학과</b><p>글을 읽고 쓰며, 언어가 사람에게 어떻게 전달되는지 공부했습니다.</p></div></li></ul></div></section>
+  </div>
+</article>
+
+<!-- ===== Q2 ===== -->
+<article class="page" data-id="q2-what" data-q="q2" data-title="어떤 기능인가요?">
+  <div class="crumbs">홈 <span class="sep">›</span> 네이버 뉴스 날짜 입력 <span class="sep">›</span> 어떤 기능인가요?</div>
+  <h1>어떤 기능인가요?</h1>
+  <p class="lead">네이버 뉴스 검색의 <b>기간 필터</b>입니다. <b>직접입력</b>을 누르면 시작일과 종료일을 골라 그 기간의 기사만 볼 수 있습니다.</p>
+  <div class="q2-use-row">
+    <section class="q2-use-pane" aria-labelledby="q2-video">
+      <h2 id="q2-video">사용 영상</h2>
+      <figure class="video"><video src="./assets/naver-direct-input.mp4" poster="./assets/naver-direct-input-poster.jpg" controls muted playsinline preload="metadata"></video>
+        <figcaption>실제 네이버 뉴스 검색에서 1991.11.01 ~ 1991.11.30을 설정하는 과정 (1.4배속)</figcaption></figure>
+    </section>
+    <section class="q2-use-pane" aria-labelledby="q2-try">
+      <h2 id="q2-try">직접 눌러 보세요</h2>
+      <div class="demo demo-nv" id="demoNv">
+        <div class="nv">
+          <div class="nv-bar"></div>
+          <div class="nv-hours"></div>
+          <div class="nv-panel">
+            <div class="nv-fields"><button class="nv-field" data-k="s"></button><button class="nv-field" data-k="e"></button></div>
+            <div class="nv-cols">
+              <div class="nv-col"><div class="h">년(Year)</div><div class="nv-list" data-u="y"></div></div>
+              <div class="nv-col"><div class="h">월(Month)</div><div class="nv-list" data-u="m"></div></div>
+              <div class="nv-col"><div class="h">일(Day)</div><div class="nv-list" data-u="d"></div></div>
+            </div>
+            <button class="nv-apply">적용</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <h2 id="q2-how">구성</h2>
+  <table class="spec"><tbody>
+    <tr><th>기간 칩</th><td>전체 · 1시간 · 1일 · 1주 · 1개월 · 3개월 · 6개월 · 1년 · 직접입력. 칩을 누르면 기간이 바로 바뀝니다. '1시간'은 누르면 시간 단위 목록이 펼쳐집니다.</td></tr>
+    <tr><th>날짜 칸</th><td>시작일 / 종료일. 눌러서 어느 날짜를 바꿀지 고릅니다.</td></tr>
+    <tr><th>선택 방식</th><td>년 · 월 · 일 세 칸의 <b>스크롤 리스트</b>에서 하나씩 눌러 고릅니다.</td></tr>
+    <tr><th>선택 범위</th><td>1990년 1월 1일부터 오늘까지. 미래 날짜는 고를 수 없습니다.</td></tr>
+  </tbody></table>
+</article>
+
+<article class="page" data-id="q2-pain" data-q="q2" data-title="어떤 점이 불편했나요?">
+  <div class="crumbs">홈 <span class="sep">›</span> 네이버 뉴스 날짜 입력 <span class="sep">›</span> 어떤 점이 불편했나요?</div>
+  <h1>어떤 점이 불편했나요?</h1>
+  <p class="lead">최근 기사는 빠르게 찾을 수 있습니다. 다만 오래된 날짜는 <b>목록에서 하나씩 찾아야 합니다.</b></p>
+
+  <div class="good-row">
+    <div class="good"><span class="ic">✓</span><div><b>최근 기사는 빠르게 찾습니다</b><p>‘1주’ 버튼 한 번으로 최근 일주일을 검색합니다.</p></div></div>
+    <div class="good"><span class="ic">✓</span><div><b>미래 날짜 선택을 막습니다</b><p>오늘 이후 날짜는 선택할 수 없습니다.</p></div></div>
+  </div>
+
+  <h2 id="q2-pains">아쉬운 점</h2>
+  <div class="pain-row">
+    <div class="pain">
+      <div class="no">1</div>
+      <div class="t">오래된 날짜일수록<br>연도를 한참 찾아야 합니다</div>
+      <div class="viz"><span class="big">35칸</span><span class="cap">2026년에서 1991년까지</span></div>
+      <p>연도가 4~5개씩만 보여, 1991년까지 여러 번 스크롤해야 합니다.</p>
+    </div>
+    <div class="pain">
+      <div class="no">2</div>
+      <div class="t">시작일과 종료일을<br>각각 스크롤해야 합니다</div>
+      <div class="viz"><span class="big">6번</span><span class="cap">연·월·일 3개씩, 두 날짜 선택</span></div>
+      <p>검색 시작일에서 연도·월·일을 고르는 데 3번, 종료일에서도 3번, 총 6번 스크롤해야 합니다.</p>
+    </div>
+    <div class="pain key">
+      <div class="no">3</div>
+      <div class="t">'직접입력'인데<br>키보드로 칠 수 없습니다</div>
+      <div class="viz"><span class="kb">1991.11.01</span><span class="cap">입력 불가 · 눌러서 고르기만 가능</span></div>
+      <p>날짜를 정확히 알아도 스크롤로 찾아야 합니다.</p>
+    </div>
+  </div>
+
+  <div class="conclude">
+    <div class="k">그래서</div>
+    <p><b>최근 기간 버튼은 유지하고, 날짜를 직접 정하는 과정을 줄입니다.</b> 입력 마스크와 날짜 범위 선택기를 비교합니다.</p>
+  </div>
+</article>
+
+<article class="page" data-id="q2-fixA" data-q="q2" data-title="개선안 ① 입력 마스크">
+  <div class="crumbs">홈 <span class="sep">›</span> 네이버 뉴스 날짜 입력 <span class="sep">›</span> 개선안 ①</div>
+  <h1>개선안 ① 입력 마스크</h1>
+  <p class="lead">19911101을 입력하면 1991.11.01로 바뀝니다. 날짜를 알면 바로 입력할 수 있습니다.</p>
+
+  <div class="fix-row">
+  <div class="vs-card">
+    <div class="vs-prev">
+      <div class="mini-list"><span>1993</span><span>1992</span><span class="on">1991</span><span>1990</span></div>
+      <span class="vs">vs</span>
+      <div class="mini-input">1991.11.01<i></i></div>
+    </div>
+    <div class="vs-title"><b class="n">01</b> 스크롤 리스트 <span class="vs">vs</span> <b>입력 마스크</b></div>
+    <div class="vs-sub">Scroll list vs Masked input</div>
+  </div>
+
+  <div class="stage"><div class="stage-lab">직접 써 보세요</div>
+    <div class="tcard" id="demoMi">
+      <div class="tc-title">언제 기사를 찾을까요?</div>
+      <div class="tc-sub">숫자 8자리를 치면 날짜가 됩니다</div>
+      <div class="mi">
+        <label class="tf"><span>시작일</span><input inputmode="numeric" placeholder="YYYY.MM.DD" data-k="s" autocomplete="off"></label>
+        <label class="tf"><span>종료일</span><input inputmode="numeric" placeholder="YYYY.MM.DD" data-k="e" autocomplete="off"></label>
+      </div>
+      <div class="hint">예) 19911101 → 1991.11.01 · 입력 후 종료일로 자동 이동</div>
+      <button class="tbtn btn" disabled>이 기간으로 검색</button>
+      <div class="result"></div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="pc">
+    <div class="pc-card pro"><div class="pc-h"><i></i>장점</div><ul><li>날짜당 8자리만 입력해, 1991년도 스크롤 없이 찾습니다.</li><li>시작일 입력 후 종료일로 넘어가, 키보드만으로 이어 쓸 수 있습니다.</li><li>복사한 날짜를 붙여 넣어 반복 입력을 줄입니다.</li></ul></div>
+    <div class="pc-card con"><div class="pc-h"><i></i>단점</div><ul><li>달력이 없어 요일을 확인하며 기간을 고르기 어렵습니다.</li><li>1월 11일을 11월 1일로 잘못 쳐도, 유효한 날짜라 오류를 잡지 못합니다.</li><li>모바일에서는 키패드가 입력 칸이나 검색 버튼을 가릴 수 있습니다.</li></ul></div>
+  </div>
+</article>
+
+<article class="page" data-id="q2-fixB" data-q="q2" data-title="개선안 ② 날짜 범위 선택기">
+  <div class="crumbs">홈 <span class="sep">›</span> 네이버 뉴스 날짜 입력 <span class="sep">›</span> 개선안 ②</div>
+  <h1>개선안 ② 날짜 범위 선택기</h1>
+  <p class="lead">연도만 골라도 1월 1일로 설정됩니다. 필요하면 이어서 월·일을 바꿉니다.</p>
+
+  <div class="fix-row">
+  <div class="vs-card">
+    <div class="vs-prev">
+      <div class="mini-list"><span>1993</span><span>1992</span><span class="on">1991</span><span>1990</span></div>
+      <span class="vs">vs</span>
+      <div class="mini-cal">
+        <div class="mc-seg"><span class="on">연도</span><span>월</span><span>일</span></div>
+        <div class="mc-grid"><span>1990</span><span class="on">1991</span><span>1992</span><span>1993</span><span>1994</span><span>1995</span></div>
+      </div>
+    </div>
+    <div class="vs-title"><b class="n">02</b> 스크롤 리스트 <span class="vs">vs</span> <b>날짜 범위 선택기</b></div>
+    <div class="vs-sub">Scroll list vs Date range picker</div>
+  </div>
+
+  <div class="stage"><div class="stage-lab">직접 써 보세요</div>
+    <div class="tcard" id="demoRp">
+      <div class="tc-title">언제 기사를 찾을까요?</div>
+      <div class="tc-sub">한 창에서 시작일과 종료일을 각각 골라 주세요</div>
+      <button type="button" class="rp-trigger" aria-haspopup="dialog"><span class="lab">기간</span><span class="rp-val">기간을 선택하세요</span><span class="chev">⌵</span></button>
+      <dialog class="dual-modal" aria-label="검색 기간 선택">
+      <div class="dual-modal-head"><strong>검색 기간을 선택해 주세요</strong><button type="button" class="rp-close">닫기</button></div>
+      <div class="dual-calendars"></div>
+      <div class="dual-footer"><span class="dual-summary" aria-live="polite">기간을 선택해 주세요</span><button type="button" class="rp-reset">초기화</button></div>
+      <button class="tbtn" disabled>이 기간으로 검색</button>
+      </dialog>
+      <div class="result"></div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="pc">
+    <div class="pc-card pro"><div class="pc-h"><i></i>장점</div><ul><li>‘90s → 1991’로 이동해 긴 연도 스크롤을 줄입니다.</li><li>시작·종료 연도만 고르면 각 1월 1일로 바로 검색할 수 있습니다.</li><li>달력에서 고르므로 2월 30일 같은 날짜 오입력을 막습니다.</li></ul></div>
+    <div class="pc-card con"><div class="pc-h"><i></i>단점</div><ul><li>날짜를 정확히 알아도 연도·월·일을 여러 번 눌러야 합니다.</li><li>연도만 고르면 1월 1일 기준이라, 연말까지 보려면 종료일을 바꿔야 합니다.</li><li>모바일에서는 달력이 위아래로 나뉘어 스크롤이 필요할 수 있습니다.</li></ul></div>
+  </div>
+</article>
+
+<article class="page ab-evaluation" data-id="q2-ab" data-q="q2" data-title="A/B 테스트 후 적용">
+  <div class="crumbs">홈 <span class="sep">›</span> 네이버 뉴스 날짜 입력 <span class="sep">›</span> A/B 테스트 후 적용</div>
+  <h1>A/B 테스트로 검증한 뒤 적용합니다</h1>
+  <p class="lead">참여자를 모집해 시제품을 먼저 확인한 뒤, 실제 서비스 방문자를 대상으로 A/B 테스트를 진행하는 계획입니다.</p>
+
+<div class="ab-slide-frame"><button type="button" class="ab-edge ab-edge-prev" data-ab-prev aria-label="이전 슬라이드" disabled>‹</button><div class="ab-slides"><section class="ab-slide" data-ab-slide="0" aria-label="테스트 설계">  <h2 id="q2-design" class="ab-slide-title"><span class="ab-title-number">1</span>테스트 설계</h2>
+  <div class="ab-flow">
+    <div class="ab-src">
+      <div class="lab">A/B 대상 · 실제 방문자</div>
+      <div class="v">'직접입력'을<br>누른 사용자</div>
+    </div>
+    <div class="ab-split" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="ab-groups">
+      <div class="ab-g"><span class="tag">A</span><b>현행</b><em>스크롤 리스트</em><span class="pct">1/3</span></div>
+      <div class="ab-g"><span class="tag b">B</span><b>개선안 ①</b><em>입력 마스크</em><span class="pct">1/3</span></div>
+      <div class="ab-g"><span class="tag c">C</span><b>개선안 ②</b><em>날짜 범위 선택기</em><span class="pct">1/3</span></div>
+    </div>
+  </div>
+  <p class="ab-note">실험 대상 방문자를 세 그룹에 무작위 배정합니다. 같은 사람에게는 같은 방식을 제공합니다.</p>
+  <div class="ab-context">
+    <b>시제품 참여자 모집</b>
+    <div><p>시제품으로 <strong>1991.11.01 ~ 1991.11.30 설정해 보기</strong></p><span>뉴스 검색 경험이 있는 참여자를 별도로 모집해, 세 방식에서 헷갈리거나 막히는 부분을 먼저 찾습니다.</span></div>
+  </div>
+
+</section><section class="ab-slide" data-ab-slide="1" aria-label="평가 지표" hidden>  <h2 id="q2-metric" class="ab-slide-title"><span class="ab-title-number">2</span>평가 지표</h2>
+  <div class="ab-metrics">
+    <div class="m-main">
+      <div class="lab">핵심 지표 · 실서비스</div>
+      <div class="v">기간 설정<br>완료율</div>
+      <p class="ab-primary-copy">직접입력을 연 사용자 중<br>날짜 설정을 마치고 ‘검색’ 버튼까지 누른 비율</p>
+      <div class="ab-calculation">
+        <span>계산 예시 · 실제 결과 아님</span>
+        <p>100명 중 80명 완료 <strong>80%</strong></p>
+      </div>
+    </div>
+    <div class="m-subs">
+      <div class="lab">보조 지표 · 편의성 확인</div>
+      <div class="m-sub"><b>설정 소요 시간</b><span>실제 방문자가 입력창을 열고 기간을 적용하기까지의 중앙값</span></div>
+      <div class="m-sub"><b>설정 중단율</b><span>실제 방문자 중 기간 적용 없이 닫거나 이탈한 비율</span></div>
+      <div class="m-sub"><b>체감 편의성</b><span>모집한 참여자에게 사용 후 “설정하기 쉬웠나요?” · 1~7점</span></div>
+    </div>
+  </div>
+  <div class="ab-seg">
+    <div class="lab">달력형 기능 의도 확인</div>
+    <p>시작·종료 연도만 골라도 <b>각 1월 1일로 설정돼 바로 검색할 수 있다는 점</b>을 사용자가 이해하는지 확인합니다.</p>
+  </div>
+
+</section><section class="ab-slide" data-ab-slide="2" aria-label="적용 판단" hidden>  <h2 id="q2-rule" class="ab-slide-title"><span class="ab-title-number">3</span>적용 판단</h2>
+  <div class="ab-steps">
+    <div class="st"><div class="no">1</div><b>개선 효과 확인</b><p>날짜를 정하고 검색까지 누른 비율이 높아졌는지 봅니다. 우연한 차이인지도 확인합니다.</p></div>
+    <div class="arrow" aria-hidden="true">›</div>
+    <div class="st"><div class="no">2</div><b>불편해진 점 확인</b><p>날짜를 잘못 고르거나, 검색이 안 되거나 느려지는 일이 늘지 않았는지 봅니다.</p></div>
+    <div class="arrow" aria-hidden="true">›</div>
+    <div class="st"><div class="no">3</div><b>단계적 적용</b><p>일부 사용자에게 먼저 적용합니다. 문제가 없으면 확대하고, 악화되면 되돌립니다.</p></div>
+  </div>
+
+  <div class="conclude">
+    <div class="k">판단 예시</div>
+    <p>검색 버튼을 누른 비율이 높아져도, <b>원한 날짜를 제대로 고르지 못한다면</b> 먼저 고칩니다.</p>
+  </div>
+  <p class="ab-decision-note">차이가 불확실하면 현행을 유지합니다. 기기별 적용은 충분한 표본으로 추가 확인한 뒤 판단합니다.</p>
+</section></div><button type="button" class="ab-edge ab-edge-next" data-ab-next aria-label="다음 슬라이드">›</button></div>
+  <div class="ab-slide-nav sr-only"><span data-ab-status aria-live="polite">테스트 설계</span></div>
+  <details class="ab-details" data-ab-details="0">
+    <summary>참여자 모집과 실서비스 테스트 구분 보기</summary>
+    <div class="ab-detail-columns">
+      <div><h3>먼저 · 참여자를 모집해 시제품 확인</h3><ul>
+        <li><b>별도 모집이 필요합니다.</b> 뉴스 검색 경험이 있는 참여자에게 지금 만든 날짜 선택 화면을 써보게 합니다.</li>
+        <li><b>“1991년 11월 기사를 찾아보세요”</b>처럼 날짜를 제시합니다. 최근 날짜와 오래된 날짜를 모두 시도하게 합니다.</li>
+        <li>달력형 선택기는 <b>월·일까지 고르지 않아도 연도만으로 검색할 수 있게</b> 만들었습니다. 이 기능의 의도를 이해하는지 확인하려고, 종료 연도로 2026년을 고른 뒤 “종료일이 언제인가요?”라고 묻습니다. 2026.01.01로 이해했는지 살펴봅니다.</li>
+        <li>사람마다 세 방식을 써보는 순서를 바꾸고, 날짜를 잘못 고르거나 도움을 요청하는 부분을 기록합니다.</li>
+      </ul></div>
+      <div><h3>그다음 · 실제 방문자 대상 A/B 테스트</h3><ul>
+        <li><b>이 단계는 별도 참여자 모집 없이</b> 실제 서비스 방문자 중 실험 대상에게 진행합니다. 서비스 운영팀이 기능과 측정 환경을 구현해야 합니다.</li>
+        <li>A/B/n은 현행과 여러 개선안을 비교하는 무작위 실험입니다. <b>A–B, A–C</b>를 각각 비교합니다.</li>
+        <li>첫 노출 전에 배정하고 재방문에도 같은 안을 제공합니다. 실험 기간·최근 기간 버튼·검색 결과 등 나머지 조건은 동일하게 둡니다.</li>
+        <li><b>검증할 가설:</b> 긴 스크롤을 줄이면 기간 설정 완료율이 높아질 것입니다. 오래된 날짜에서의 차이는 동일한 사용성 과제로 확인합니다.</li>
+      </ul></div>
+    </div>
+    <p class="ab-detail-foot">두 단계 모두 실행 전 계획입니다. 실서비스 A/B 테스트는 운영팀과의 구현·측정 협업을 전제로 합니다.</p>
+  </details>
+  <details class="ab-details" data-ab-details="1" hidden>
+    <summary>지표 계산 기준 자세히 보기</summary>
+    <dl class="ab-definitions">
+      <div><dt>기간 설정 완료율</dt><dd>첫 시도에서 날짜 설정을 마치고 검색 버튼을 누른 사용자 수 ÷ 직접입력을 연 사용자 수 × 100. 실제 검색 요청이 전달된 경우를 완료로 기록합니다. 중단한 사용자도 분모에 포함하고, 사용자별 첫 시도만 집계합니다.</dd></div>
+      <div><dt>시작·종료 기록</dt><dd>입력창 열기 → 기간 적용·검색 요청 / 적용 없이 닫기·페이지 이탈을 기록합니다. 무응답의 종료 시간은 사전에 정하고, 기록 누락·중복과 배정 비율도 확인합니다.</dd></div>
+      <div><dt>시간·중단율</dt><dd>시간은 완료한 첫 시도의 중앙값으로 비교하고, 중단율을 함께 봅니다. 적용 후 자동으로 창이 닫힌 경우는 중단에서 제외합니다. 검색 실패는 별도 품질 지표로 확인합니다.</dd></div>
+      <div><dt>정확성·편의성</dt><dd>별도로 모집한 참여자가 시제품을 써볼 때, 요청한 기간과 실제 선택이 일치하는지 확인합니다. 성공·실패 모두 종료 직후 쉬움 점수(1점 매우 어려움~7점 매우 쉬움)와 이유를 묻습니다. 형식 오류는 원인 분석에 쓰고, 달력과 입력 방식의 정확성은 같은 과제로 비교합니다.</dd></div>
+    </dl>
+    <p class="ab-detail-foot">완료한 날짜만으로 실험 사용자를 나누면 중단한 사람이 빠집니다. 최근·오래된 날짜 비교는 사용성 과제로, PC·모바일 비교는 사전에 정한 실험 분석으로 확인합니다.</p>
+  </details>
+  <details class="ab-details" data-ab-details="2" hidden>
+    <summary>채택 기준과 참고 자료 보기</summary>
+    <dl class="ab-definitions">
+      <div><dt>실험 전에 합의</dt><dd>기존 완료율을 확인한 뒤 최소 개선폭, 필요한 표본 수와 기간, 품질 지표의 허용 악화 폭을 정합니다. 기준 데이터 없이 목표 수치를 임의로 정하지 않습니다.</dd></div>
+      <div><dt>현행과 비교</dt><dd>A–B, A–C의 복수 비교를 반영한 신뢰구간으로 차이의 불확실성을 확인합니다. 통계적으로 구분되고 사전 최소 개선폭도 충족하는 안을 후보로 삼습니다. 두 안이 모두 통과하면 B–C를 추가 검증합니다.</dd></div>
+      <div><dt>품질·확대 기준</dt><dd>검색 실패·응답 지연은 사전 허용 범위와 비교하고, 사용성 테스트에서 발견한 심각한 날짜 오선택은 먼저 해결합니다. 표본이 작거나 ‘유의한 악화가 없다’는 이유만으로 안전하다고 판단하지 않습니다.</dd></div>
+      <div><dt>보류·재검증</dt><dd>계획한 표본과 기간을 채우기 전에 좋은 결과만 보고 종료하지 않습니다. 기기별 차이는 충분한 표본으로 추가 확인하며, 판단이 불확실하면 현행 유지 또는 재실험을 선택합니다.</dd></div>
+    </dl>
+    <p class="ab-detail-foot">설계 참고: <a href="https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-pre-experiment-stage/" target="_blank" rel="noreferrer">Microsoft · 실험 사전 설계</a>, <a href="https://www.nngroup.com/articles/satisfaction-vs-performance-metrics/" target="_blank" rel="noreferrer">NN/g · 성과와 만족도 측정</a>. 위 지표와 과제는 이 개선안에 맞춘 제안입니다.</p>
+  </details>
+</article>
+
+<!-- ===== Q3 ===== -->
+<article class="page guide-page" data-id="q3-compare" data-q="q3" data-title="한눈에 비교">
+  <div class="crumbs">홈 <span class="sep">›</span> Vrew AI 목소리 3가지 <span class="sep">›</span> 한눈에 비교</div>
+  <h1>AI 목소리, 무엇을 쓰면 좋을까요?</h1>
+  <p class="lead">새로운 설명을 넣으려면 <b>클립 삽입</b>, 짧은 반응을 덧붙이려면 <b>효과음</b>, 이미 있는 자막을 읽히려면 <b>자막 더빙</b>을 쓰면 됩니다.</p>
+  <p class="term-note">여기서 <b>클립</b>은 편집 화면에 나뉘어 있는 영상 조각입니다. <b>씬</b>은 내용이 이어지는 클립들의 묶음입니다.</p>
+  <h2 id="q3-choice">하고 싶은 일에 맞춰 고르세요</h2>
+  <div class="table-scroll" role="region" aria-label="AI 목소리 세 기능 비교" tabindex="0"><table class="spec voice-table"><caption>AI 목소리 탭의 세 기능 비교</caption><thead><tr><th scope="col">궁금한 점</th><th scope="col">AI 목소리 클립 삽입</th><th scope="col">AI 목소리 효과음</th><th scope="col">AI 자막 더빙</th></tr></thead><tbody>
+    <tr><th scope="row">언제 쓰나요?</th><td>영상 시작이나 장면 사이에 <b>새 설명</b>을 넣을 때</td><td>기존 영상의 흐름을 유지하며 <b>짧은 반응이나 강조 멘트</b>를 덧붙일 때</td><td><b>기존 자막을 읽히거나</b>, 원래 음성을 <b>AI 목소리로 바꾸고</b> 싶을 때</td></tr>
+    <tr><th scope="row">예를 들면요?</th><td>“오늘은 세 가지 방법을 알려 드릴게요.”</td><td>“띠용!”, “잠깐!”, “여기 보세요!” 같은 표현을 AI 목소리로 넣기</td><td><b>자막 읽기</b> · 목소리 없는 설명 영상에 자막을 읽는 내레이션 넣기<br><b>목소리 바꾸기</b> · 사람이 말하는 자기소개 영상의 원음을 음소거하고 AI 목소리로 바꾸기</td></tr>
+    <tr><th scope="row">무엇을 입력하나요?</th><td>읽어 줄 문장을 <b>새로 씁니다.</b></td><td>넣고 싶은 짧은 말을 <b>새로 씁니다.</b></td><td><b>기존 자막</b>을 사용합니다.</td></tr>
+    <tr><th scope="row">무엇이 생기나요?</th><td>입력한 말을 읽는 <b>새 클립과 자막</b>이 추가됩니다.</td><td><b>기존 클립 안</b>에 짧은 목소리가 추가됩니다. 원래 음성과 자막은 유지됩니다.</td><td><b>기존 클립 안</b>에 자막을 읽는 AI 목소리가 추가됩니다. 원래 음성이 있으면 <b>음소거</b>됩니다.</td></tr>
+    <tr><th scope="row">어디에 넣나요?</th><td>새 클립을 끼워 넣을 위치</td><td>목소리를 들려줄 단어 위치</td><td>전체 클립 / 현재 씬 / 선택한 클립 중 선택</td></tr>
+    <tr><th scope="row">어디서 누르나요?</th><td>AI 목소리 → 클립 삽입</td><td>AI 목소리 → 효과음</td><td>AI 목소리 → AI 자막 더빙</td></tr>
+  </tbody></table></div>
+  <aside class="guide-note"><b>‘효과음’도 글을 읽는 목소리입니다</b><p>이 표의 효과음은 AI 목소리 탭의 기능입니다. “짝짝” 같은 녹음된 소리를 고르는 것이 아니라, 직접 쓴 짧은 말을 AI 목소리로 넣습니다.</p></aside>
+  <details class="evidence-details">
+    <summary>좀 더 자세히 설명해 주세요</summary>
+    <p>각 기능의 메뉴에서 <b>새로 넣기, 내용·목소리 수정, 적용 범위 선택</b>을 할 수 있습니다.</p>
+    <dl class="result-list">
+      <div><dt>클립 삽입</dt><dd><b>새 클립으로 삽입</b> · 입력한 문장을 읽는 새 클립과 자막을 추가합니다.<br><b>텍스트 수정</b> · AI 목소리 클립이 읽을 문장을 고칩니다.<br><b>목소리 수정</b> · AI 목소리 클립의 목소리와 설정을 바꿉니다.</dd></div>
+      <div><dt>효과음</dt><dd>원하는 위치에 “띠용!”, “잠깐!” 같은 표현을 입력하면 <b>원래 음성과 자막을 유지하면서</b> 목소리를 덧붙입니다.<br>짧은 반응이나 강조에 활용하고, 원래 말과 겹치지 않도록 <b>위치와 음량</b>을 확인해 주세요.</dd></div>
+      <div><dt>자막 더빙</dt><dd><b>전체 클립에 더빙하기</b> · 프로젝트 전체를 대상으로 더빙합니다.<br><b>현재 씬의 모든 클립에 더빙하기</b> · 지금 보고 있는 씬에 속한 클립들을 더빙합니다.<br><b>현재 / 선택된 클립에 더빙하기</b> · 체크하지 않으면 현재 클립, 체크하면 선택한 클립들을 더빙합니다.<br><b>더빙 목소리 전체 수정</b> · 이미 만든 자막 더빙의 목소리를 한꺼번에 바꿉니다.<br><b>더빙 전체 삭제</b> · 자막 더빙만 지웁니다. 영상·자막·별도로 넣은 효과음은 유지됩니다.</dd></div>
+    </dl>
+    <p>더빙할 범위를 고른 뒤 <b>목소리를 선택하고 ‘목소리 사용’</b>을 누릅니다. 범위 안에 이미 더빙된 클립이 있으면 그대로 두고, 더빙이 없는 클립에 추가합니다.</p>
+    <p><b>더빙 삭제는 실행 취소와 다릅니다.</b> 삭제 후에도 바뀐 클립 길이와 원래 음성의 음소거 상태가 남을 수 있으니 확인해 주세요.</p>
+  </details>
+  <div class="sources"><b>확인 자료</b><p>Vrew 4.8.3(macOS) 실행 화면·메뉴 확인(2026.11.09). 기능 안내: <a href="https://vrew.imweb.me/tutorial/?bmode=view&amp;idx=12646539" target="_blank" rel="noreferrer">Vrew 공식 AI 목소리 안내</a>와 <a href="https://vrew.imweb.me/tutorial/?bmode=view&amp;idx=14912740" target="_blank" rel="noreferrer">공식 AI 자막 더빙 안내</a>.</p></div>
+</article>
+
+<article class="page guide-page" data-id="q3-shots" data-q="q3" data-title="화면으로 따라 보기">
+  <div class="crumbs">홈 <span class="sep">›</span> Vrew AI 목소리 3가지 <span class="sep">›</span> 화면으로 따라 보기</div>
+  <h1>어디를 누르고, 무엇이 달라지나요?</h1>
+  <p class="lead">전체 화면에서 위치를 찾고, 가까이 보기에서 버튼을 확인하세요.<br>사진을 누르면 더 크게 볼 수 있습니다.</p>
+  <figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/voice-menu-full.svg" aria-label="AI 목소리 탭과 클립 삽입, 효과음, AI 자막 더빙 버튼 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/voice-menu-full.svg" alt="전체 화면: AI 목소리 탭과 클립 삽입, 효과음, AI 자막 더빙 버튼"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/voice-menu-full.svg" aria-label="AI 목소리 탭과 클립 삽입, 효과음, AI 자막 더빙 버튼 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/voice-menu-detail.svg" alt="확대 화면: AI 목소리 탭과 클립 삽입, 효과음, AI 자막 더빙 버튼"></button></div></div><figcaption>상단 <b>AI 목소리</b> 탭에서 세 기능을 찾을 수 있습니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure>
+  <section class="guide-section"><h2 id="q3-insert">새 설명을 넣을 때 · 클립 삽입</h2><p><b>AI 목소리 → 클립 삽입</b>을 누르고 문장을 입력한 뒤 <b>확인</b>을 누릅니다. 새 클립이 생겼는지 확인해 주세요.</p><div class="shot-row"><figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/voice-input-full.svg" aria-label="새 문장 입력 칸과 확인 버튼 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/voice-input-full.svg" alt="전체 화면: 새 문장 입력 칸과 확인 버튼"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/voice-input-full.svg" aria-label="새 문장 입력 칸과 확인 버튼 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/voice-input-detail.svg" alt="확대 화면: 새 문장 입력 칸과 확인 버튼"></button></div></div><figcaption>입력 · 새 문장을 쓰고 <b>확인</b>을 누릅니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure> <figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/voice-result-full.svg" aria-label="새로 추가된 AI 목소리 클립 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/voice-result-full.svg" alt="전체 화면: 새로 추가된 AI 목소리 클립"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/voice-result-full.svg" aria-label="새로 추가된 AI 목소리 클립 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/voice-result-detail.svg" alt="확대 화면: 새로 추가된 AI 목소리 클립"></button></div></div><figcaption>결과 · 입력한 말을 읽는 새 클립이 생겼습니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></div></section>
+  <section class="guide-section"><h2 id="q3-effect">짧은 말을 덧붙일 때 · 효과음</h2><p>목소리를 넣을 위치에서 <b>AI 목소리 → 효과음</b>을 선택합니다. 짧은 말을 입력하고 파란 생성 버튼을 누르면 기존 클립 안에 목소리가 추가됩니다.</p><div class="shot-row"><figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/effect-input-full.svg" aria-label="짧은 말 입력 칸과 파란 생성 버튼 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/effect-input-full.svg" alt="전체 화면: 짧은 말 입력 칸과 파란 생성 버튼"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/effect-input-full.svg" aria-label="짧은 말 입력 칸과 파란 생성 버튼 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/effect-input-detail.svg" alt="확대 화면: 짧은 말 입력 칸과 파란 생성 버튼"></button></div></div><figcaption>입력 · 짧은 말을 쓰고 파란 버튼을 누릅니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure> <figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/effect-result-full.svg" aria-label="클립에 추가된 보라색 음성 표시 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/effect-result-full.svg" alt="전체 화면: 클립에 추가된 보라색 음성 표시"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/effect-result-full.svg" aria-label="클립에 추가된 보라색 음성 표시 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/effect-result-detail.svg" alt="확대 화면: 클립에 추가된 보라색 음성 표시"></button></div></div><figcaption>결과 · 기존 클립에 보라색 목소리 표시가 생겼습니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></div></section>
+  <section class="guide-section"><h2 id="q3-dub">기존 자막을 읽힐 때 · AI 자막 더빙</h2><p><b>AI 목소리 → AI 자막 더빙</b>에서 적용할 범위를 고릅니다. 예시에서는 <b>선택된 클립에 더빙하기</b>를 사용했습니다. 기존 자막 옆에 목소리 표시가 생겼는지 확인해 주세요.</p><div class="shot-row"><figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/dub-menu-full.svg" aria-label="AI 자막 더빙 메뉴와 선택된 클립에 더빙하기 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/dub-menu-full.svg" alt="전체 화면: AI 자막 더빙 메뉴와 선택된 클립에 더빙하기"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/dub-menu-full.svg" aria-label="AI 자막 더빙 메뉴와 선택된 클립에 더빙하기 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/dub-menu-detail.svg" alt="확대 화면: AI 자막 더빙 메뉴와 선택된 클립에 더빙하기"></button></div></div><figcaption>선택 · 전체·씬·선택한 클립 중 범위를 고릅니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure> <figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/dub-result-full.svg" aria-label="기존 자막 클립에 추가된 목소리 표시 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/dub-result-full.svg" alt="전체 화면: 기존 자막 클립에 추가된 목소리 표시"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/dub-result-full.svg" aria-label="기존 자막 클립에 추가된 목소리 표시 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/dub-result-detail.svg" alt="확대 화면: 기존 자막 클립에 추가된 목소리 표시"></button></div></div><figcaption>결과 · 기존 자막을 읽는 목소리가 추가됐습니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></div></section>
+</article>
+
+<!-- ===== Q4 ===== -->
+<article class="page guide-page" data-id="q4-scene" data-q="q4" data-title="문의 1 · 자동 씬 나누기">
+  <div class="crumbs">홈 <span class="sep">›</span> Vrew 고객 문의 <span class="sep">›</span> 문의 1</div>
+  <h1>문의 1 · 자동 씬 나누기</h1>
+  <div class="cs"><div class="cs-q"><div class="who">사용자 문의</div><div class="qq">Q. 자동 씬 나누기는 어떤 기능인가요? 언제 쓰는지 궁금해요.</div></div><div class="cs-a">
+    <div class="who">Vrew 답변</div>
+    <p>안녕하세요, Vrew입니다.<br>자동 씬 나누기 기능에 관심 가져주셔서 감사합니다.</p>
+    <h3>어떤 기능인가요?</h3>
+    <p><b>영상 속 말의 흐름을 분석해, 내용이 이어지는 클립끼리 하나의 ‘씬’으로 묶어 주는 기능입니다.</b> 클립은 영상 조각이고, 씬은 비슷한 내용을 담은 클립을 모은 묶음입니다.</p>
+    <p>씬마다 내용에 맞는 제목도 자동으로 붙어서, 긴 영상도 주제별로 한눈에 훑어보실 수 있습니다. 아래의 17초 자기소개 영상에서는 인사와 자기소개 부분이 두 개의 씬으로 나뉘었습니다.</p>
+    <h3>언제 쓰면 좋나요?</h3>
+    <ul><li>강의·인터뷰·브이로그처럼 주제가 여러 번 바뀌는 긴 영상을 편집할 때</li><li>특정 부분을 찾아 고치거나 씬 단위로 순서를 바꾸고 싶을 때</li><li>영상 목차를 만들거나 하이라이트를 고를 때</li></ul>
+    <h3>사용 방법</h3>
+    <p class="picture-key">빨간 네모가 눌러야 할 곳입니다. 사진을 누르면 전체 화면을 볼 수 있어요.</p>
+    <ol class="steps">
+      <li><b>상단 편집 탭에서 자동 씬 나누기를 눌러 주세요.</b><figure class="guide-shot shot-pair guide-shot-icon"><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/scene-menu-full.svg" aria-label="편집 탭의 자동 씬 나누기 버튼 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/scene-menu-full.svg" alt="전체 화면: 편집 탭의 자동 씬 나누기 버튼"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/scene-menu-full.svg" aria-label="편집 탭의 자동 씬 나누기 버튼 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/scene-menu-detail.svg" alt="확대 화면: 편집 탭의 자동 씬 나누기 버튼"></button></div></div><figcaption><b>편집</b> 탭의 자동 씬 나누기 버튼<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></li>
+      <li><b>나눌 씬을 체크한 뒤 나누기를 눌러 주세요.</b><p>영상 전체를 나누려면 <b>전체 선택</b>을 누르시면 됩니다.</p><figure class="guide-shot shot-pair guide-shot-tall"><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/scene-selection-full.svg" aria-label="자동 씬 나누기 적용 대상 체크박스와 나누기 버튼 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/scene-selection-full.svg" alt="전체 화면: 자동 씬 나누기 적용 대상 체크박스와 나누기 버튼"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/scene-selection-full.svg" aria-label="자동 씬 나누기 적용 대상 체크박스와 나누기 버튼 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/scene-selection-detail.svg" alt="확대 화면: 자동 씬 나누기 적용 대상 체크박스와 나누기 버튼"></button></div></div><figcaption>나눌 씬을 체크하고 아래 <b>나누기</b>를 누릅니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></li>
+      <li><b>나뉜 씬과 제목을 확인해 주세요.</b><p>예시에서는 ‘영상 편집기 소개 및 인사’와 ‘자기소개’로 나뉘었습니다.</p><figure class="guide-shot shot-pair guide-shot-tall"><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/scene-result-full.svg" aria-label="인사와 자기소개로 나뉜 씬과 제목 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/scene-result-full.svg" alt="전체 화면: 인사와 자기소개로 나뉜 씬과 제목"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/scene-result-full.svg" aria-label="인사와 자기소개로 나뉜 씬과 제목 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/scene-result-detail.svg" alt="확대 화면: 인사와 자기소개로 나뉜 씬과 제목"></button></div></div><figcaption>결과 · 내용별 제목이 붙은 씬 두 개<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></li>
+    </ol>
+    <h3>예시 영상에서는 이렇게 달라졌어요</h3>
+    <div class="ba"><div class="box"><div class="k">실행 전</div><div class="v">씬 1개</div></div><div class="arrow" aria-hidden="true">→</div><div class="box"><div class="k">실행 후</div><div class="v">씬 2개</div></div></div>
+    <p class="sample-note">영상 길이는 17초, 클립 수는 6개로 유지됐습니다. 이 숫자는 예시 영상의 결과이며, 씬 수와 제목은 영상 내용에 따라 달라집니다.</p>
+    <aside class="guide-note"><b>원하는 대로 나뉘지 않았다면</b><p>실행 취소로 되돌리거나 씬을 직접 합치고 나눠 조정하실 수 있습니다. 자동으로 붙은 제목도 영상 내용에 맞는지 확인해 주세요.</p></aside>
+    <p>더 궁금하신 점이 있으면 언제든 편하게 문의해 주세요.<br>감사합니다.</p>
+  </div></div>
+  <div class="sources"><b>확인 자료</b><p><a href="https://vrew.imweb.me/notice/?bmode=view&amp;idx=164227107" target="_blank" rel="noreferrer">Vrew 공식 3.0 업데이트 안내 — 자동 씬 나누기</a>. 예시: Vrew 4.8.3(macOS), 2026.11.08 데모 실행 결과.</p></div>
+</article>
+
+<article class="page guide-page" data-id="q4-pause" data-q="q4" data-title="문의 2 · 머뭇거린 부분 지우기">
+  <div class="crumbs">홈 <span class="sep">›</span> Vrew 고객 문의 <span class="sep">›</span> 문의 2</div>
+  <h1>문의 2 · 머뭇거린 부분 지우기</h1>
+  <div class="cs"><div class="cs-q"><div class="who">사용자 문의</div><div class="qq">Q. 말하다 멈추거나 “안녕 안녕하세요”처럼 반복한 부분을 지우고 싶어요.</div></div><div class="cs-a">
+    <div class="who">Vrew 답변</div>
+    <p>안녕하세요, Vrew입니다.<br>말 사이에 멈춘 구간이나 반복한 말을 정리하고 싶으시군요.</p>
+    <p><b>소리 없이 멈춘 구간은 ‘무음 구간 줄이기’로 줄이고, 소리 내어 반복한 말은 ‘컷편집 줄’에서 지우시면 됩니다.</b> 상황에 맞는 방법을 아래에서 안내해 드릴게요.</p>
+    <h3>소리 없이 멈춘 구간을 줄이려면</h3>
+    <p>강의나 인터뷰에서 말 사이의 긴 공백을 한 번에 정리하고 싶을 때 사용해 보세요.</p>
+    <ol class="steps"><li><b>편집 → 무음 구간 줄이기를 눌러 주세요.</b><figure class="guide-shot shot-pair guide-shot-icon"><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/silence-menu-full.svg" aria-label="무음 구간 줄이기 버튼 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/silence-menu-full.svg" alt="전체 화면: 무음 구간 줄이기 버튼"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/silence-menu-full.svg" aria-label="무음 구간 줄이기 버튼 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/silence-menu-detail.svg" alt="확대 화면: 무음 구간 줄이기 버튼"></button></div></div><figcaption><b>편집</b> 탭의 무음 구간 줄이기 버튼<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></li><li><b>찾을 무음의 길이와 남겨 둘 길이를 정해 주세요.</b><p>예를 들어 ‘1초 이상’을 찾고 ‘0초’를 남기면, 1초 이상 조용했던 구간을 찾아 남기지 않고 줄입니다. 숨 쉴 틈을 두고 싶다면 남길 길이를 늘려 주세요.</p><figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/silence-settings-full.svg" aria-label="무음 길이 기준과 편집 후 남길 길이 설정 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/silence-settings-full.svg" alt="전체 화면: 무음 길이 기준과 편집 후 남길 길이 설정"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/silence-settings-full.svg" aria-label="무음 길이 기준과 편집 후 남길 길이 설정 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/silence-settings-detail.svg" alt="확대 화면: 무음 길이 기준과 편집 후 남길 길이 설정"></button></div></div><figcaption>찾을 길이 <b>1초 이상</b> · 남길 길이 <b>0초</b><span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></li><li><b>적용할 범위를 고르고 실행한 뒤 재생해 주세요.</b><p>말이 너무 급하게 이어진다면 되돌린 뒤 남길 길이를 늘려 다시 조정해 주세요.</p></li></ol>
+    <div class="ba"><div class="box"><div class="k">예시 영상 · 적용 전</div><div class="v">17초</div></div><div class="arrow" aria-hidden="true">→</div><div class="box"><div class="k">적용 후</div><div class="v">13초</div></div></div>
+    <p class="sample-note">1초 이상 무음을 찾아 0초만 남긴 예시입니다. 실제로 줄어드는 시간은 영상과 설정에 따라 달라집니다.</p>
+    <h3>“안녕 안녕하세요”처럼 반복한 말을 지우려면</h3>
+    <p><b>반복한 말은 소리가 있으므로 무음 줄이기로 지워지지 않습니다.</b> 자막 위에 단어별로 표시된 <b>컷편집 줄</b>에서 지워 주세요. 아래 빨간 네모는 첫 번째 ‘안녕’을 표시한 것입니다.</p>
+    <ol class="steps"><li><b>컷편집 줄에서 지울 단어 앞에 커서를 놓아 주세요.</b><p>아래쪽 자막 문장만 고치면 자막만 달라질 수 있으니, 위쪽의 실제 발화 내용을 선택해 주세요.</p></li><li><b>앞으로 지우기를 눌러 주세요.</b><p>Mac에서는 <kbd>fn</kbd> + <kbd>Delete</kbd>를 누릅니다. 한 번 지운 뒤 재생해 필요한 말까지 지워지지 않았는지 확인해 주세요.</p></li></ol>
+    <div class="shot-row"><figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/filler-before-full.svg" aria-label="안녕 안녕하세요 중 지울 첫 번째 안녕 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/filler-before-full.svg" alt="전체 화면: 안녕 안녕하세요 중 지울 첫 번째 안녕"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/filler-before-full.svg" aria-label="안녕 안녕하세요 중 지울 첫 번째 안녕 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/filler-before-detail.svg" alt="확대 화면: 안녕 안녕하세요 중 지울 첫 번째 안녕"></button></div></div><figcaption>편집 전 · 첫 번째 <b>안녕</b>을 지웁니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure> <figure class="guide-shot shot-pair "><div class="shot-views"><div class="shot-context"><span class="shot-label">전체 화면</span><button class="shot-open" type="button" data-full="./assets/annotated/filler-after-full.svg" aria-label="안녕하세요만 남은 컷편집 줄 — 전체 화면 크게 보기"><img loading="lazy" src="./assets/annotated/filler-after-full.svg" alt="전체 화면: 안녕하세요만 남은 컷편집 줄"></button></div><div class="shot-detail"><span class="shot-label">가까이 보기</span><button class="shot-open" type="button" data-full="./assets/annotated/filler-after-full.svg" aria-label="안녕하세요만 남은 컷편집 줄 — 더 크게 보기"><img loading="lazy" src="./assets/annotated/filler-after-detail.svg" alt="확대 화면: 안녕하세요만 남은 컷편집 줄"></button></div></div><figcaption>편집 후 · <b>안녕하세요</b>만 남았습니다.<span class="shot-hint">사진을 누르면 더 크게 볼 수 있습니다</span></figcaption></figure></div>
+    <div class="ba"><div class="box"><div class="k">예시 클립 · 편집 전</div><div class="v">1.62초</div></div><div class="arrow" aria-hidden="true">→</div><div class="box"><div class="k">편집 후</div><div class="v">0.92초</div></div></div>
+    <aside class="guide-note"><b>지우는 방향을 확인해 주세요</b><p>클립 맨 앞에서 뒤로 지우기를 누르면 이전 클립과 합쳐질 수 있습니다. 예시처럼 첫 단어를 지울 때는 <b>앞으로 지우기</b>를 사용해 주세요. 잘못 편집했다면 실행 취소로 되돌릴 수 있습니다.</p></aside>
+    <p>마지막으로 해당 구간을 재생해 말이 자연스럽게 이어지는지 확인해 주세요.<br>더 궁금하신 점이 있으면 언제든 편하게 문의해 주세요. 감사합니다.</p>
+  </div></div>
+  <div class="sources"><b>확인 자료</b><p><a href="https://vrew.ai/ko/feature/auto-silence-removal/" target="_blank" rel="noreferrer">Vrew 공식 무음 구간 줄이기 안내</a>, <a href="https://vrew.ai/ko/feature/text-based-video-editing/" target="_blank" rel="noreferrer">텍스트로 영상 편집하기 안내</a>. 예시: Vrew 4.8.3(macOS), 2026.11.06·08 데모 실행 기록.</p></div>
+</article>
+
+      <nav class="pager"><button id="prev"><div class="lbl">← 이전</div><div class="nm" id="prevNm"></div></button><button id="next" class="next"><div class="lbl">다음 →</div><div class="nm" id="nextNm"></div></button></nav>
+    </main>
+    <aside class="toc" id="toc"></aside>
+  </div>
+</div>
+
+<dialog id="lightbox" aria-labelledby="lightbox-title"><div class="lightbox-bar"><p id="lightbox-title">전체 화면</p><button type="button" id="lightbox-close" autofocus>닫기 <span aria-hidden="true">×</span></button></div><div class="lightbox-image"><img alt=""></div></dialog>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

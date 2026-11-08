@@ -1,0 +1,10 @@
+/* ---------- print (PDF) ---------- */
+@media print{
+  @page{size:A4;margin:14mm 14mm}
+  #onboard{min-height:auto;page-break-after:always;padding:60mm 10mm}
+  #app{display:block!important}
+  .topnav,.sidebar,.toc,.pager,#lightbox{display:none!important}
+  .layout{display:block}.main{max-width:none;padding:0}
+  .page{display:block!important;page-break-after:always}
+  figure,.cs,.spec,.callout{break-inside:avoid}
+}
